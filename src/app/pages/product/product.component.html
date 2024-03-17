@@ -1,0 +1,13 @@
+<form (ngSubmit)="addNewProduct()" class="example-form">
+    <mat-form-field>
+      <input matInput placeholder="Descrição" [(ngModel)]="product.description" name="description" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number" placeholder="Preço" [(ngModel)]="product.price" name="price" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="text" placeholder="URL da Imagem" [(ngModel)]="product.imageUrl" name="imageUrl" required>
+    </mat-form-field>
+    <button mat-raised-button type="submit">Adicionar Produto</button>
+  </form>
+  
