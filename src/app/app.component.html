@@ -1,2 +1,10 @@
 <p>e-commerce</p>
-<app-form-new-ad></app-form-new-ad>
+<nav>
+    <ul>
+      <li><a routerLink="/ads" routerLinkActive="active" ariaCurrentWhenActive="page">Anuncios</a></li>
+      <li><a routerLink="/new-ads" routerLinkActive="active" ariaCurrentWhenActive="page">Novo Anuncio</a></li>
+    </ul>
+  </nav>
+
+  <!-- The routed views render in the <router-outlet>-->
+  <router-outlet></router-outlet>

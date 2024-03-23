@@ -1,0 +1,7 @@
+<p>Anuncios Ativos</p>
+<div class="anuncios-list">
+    <app-card-ads
+        *ngFor="let ad of (listAds$ | async)"
+        [ad]="ad"
+    ></app-card-ads>   
+</div>

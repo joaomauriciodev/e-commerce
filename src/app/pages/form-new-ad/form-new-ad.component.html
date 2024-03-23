@@ -1,13 +1,9 @@
 <mat-card class="ad-form-card">
     <mat-card-header>
-      <mat-card-title>Create Ad</mat-card-title>
+      <mat-card-title>Criar Anuncio</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-      <form [formGroup]="adForm" (ngSubmit)="onAddNewAd()">
-        <mat-form-field class="full-width">
-          <input matInput formControlName="id" placeholder="ID">
-        </mat-form-field>
-  
+      <form [formGroup]="adForm" (ngSubmit)="onAddNewAd()">      
         <mat-form-field class="full-width">
           <input matInput formControlName="title" placeholder="Title">
         </mat-form-field>
@@ -21,7 +17,7 @@
         </mat-form-field>
   
         <mat-form-field class="full-width">
-          <input matInput formControlName="urlImage" placeholder="Image URL">
+          <input matInput formControlName="imageUrl" placeholder="Image URL">
         </mat-form-field>
   
         <button mat-raised-button color="primary" type="submit">Submit</button>
