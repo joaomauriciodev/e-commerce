@@ -1,32 +1,11 @@
 {
   "ads": [
     {
-      "id": "9dee",
-      "title": "Garrafa de café",
-      "description": "Garrafa de café velha",
-      "price": "20",
-      "imageUrl": "https://th.bing.com/th/id/OIP.Sn8CkH00Rcxc81VAIkjGegAAAA?rs=1&pid=ImgDetMain"
-    },
-    {
-      "id": "06b0",
-      "title": "Computador",
-      "description": "i3, rx550, 8gb, etc e etc",
-      "price": "1200.22",
-      "imageUrl": "https://th.bing.com/th/id/OIP.0IvgEohbGv9jDzoOZHOWuAHaFj?rs=1&pid=ImgDetMain"
-    },
-    {
-      "id": "ec4d",
-      "title": "Prato",
-      "description": "Jogo de prato de 4 peças",
-      "price": "66.11",
-      "imageUrl": ""
-    },
-    {
-      "id": "92f7",
+      "id": "5bce",
       "title": "Vaso",
       "description": "Vaso Semi novo",
-      "price": "4",
-      "imageUrl": ""
+      "price": "22.33",
+      "imageUrl": "https://thumbs.dreamstime.com/b/vasos-antigos-21374724.jpg"
     }
   ]
 }

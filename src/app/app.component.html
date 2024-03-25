@@ -1,10 +1,37 @@
-<p>e-commerce</p>
-<nav>
-    <ul>
-      <li><a routerLink="/ads" routerLinkActive="active" ariaCurrentWhenActive="page">Anuncios</a></li>
-      <li><a routerLink="/new-ads" routerLinkActive="active" ariaCurrentWhenActive="page">Novo Anuncio</a></li>
-    </ul>
-  </nav>
+<div class="app">
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="side" color="warn" [opened]="isMenuOpen">
+      <mat-nav-list>
+        <a 
+          mat-list-item 
+          routerLink="/ads" 
+          routerLinkActive="active" 
+          ariaCurrentWhenActive="page" 
+          (click)="toggleMenu()">
+          <mat-icon>search</mat-icon>
+          <span>Anuncios</span>
+        </a>
+        <a 
+          mat-list-item 
+          routerLink="/new-ads" 
+          routerLinkActive="active" 
+          ariaCurrentWhenActive="page" 
+          (click)="toggleMenu()">
+          <mat-icon>add</mat-icon>
+          <span>Novo Anuncio</span>
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar color="primary">
+        <button mat-icon-button (click)="toggleMenu()">
+          <mat-icon>menu</mat-icon>
+        </button>        
+        <span> Lojinha do Macaco 🐒</span>
+      </mat-toolbar>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
 
-  <!-- The routed views render in the <router-outlet>-->
-  <router-outlet></router-outlet>
+
