@@ -16,7 +16,7 @@ func SetupRoutes(database *db.MongoDb) *mux.Router {
 		w.WriteHeader(http.StatusOK)
 	}).Methods("GET")
 
-	api := r.PathPrefix("api/products").Subrouter()
+	api := r.PathPrefix("/api/products").Subrouter()
 	api.HandleFunc("", handler.GetProducts).Methods("GET")
 
 	return r
