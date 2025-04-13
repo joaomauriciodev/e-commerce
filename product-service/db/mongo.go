@@ -28,7 +28,7 @@ func Connect(uri string) (*MongoDb, error) {
 		return nil, err
 	}
 
-	collection := client.Database("ecommerce").Collection("prodcuts")
+	collection := client.Database("ecommerce").Collection("products")
 
 	return &MongoDb{
 		client:     client,
